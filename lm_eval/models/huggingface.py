@@ -84,6 +84,7 @@ class HuggingFaceAutoLM(BaseLM):
         dtype: Optional[Union[str, torch.dtype]] = None,
         device: Optional[Union[int, str]] = "cuda",
         peft: str = None,
+        peft_revision: str = None,
         load_in_8bit: Optional[bool] = False,
         trust_remote_code: Optional[bool] = False,
     ):
@@ -203,7 +204,7 @@ class HuggingFaceAutoLM(BaseLM):
             self.model = self._create_auto_model_peft(
                 model=self.model,
                 peft=peft,
-                revision=revision,
+                revision=peft_revision or revision,
                 subfolder=subfolder,
                 torch_dtype=_get_dtype(dtype, self._config),
                 **model_kwargs,

@@ -3,7 +3,7 @@ from lm_eval.base import MultipleChoiceTask
 
 class CSATQA(MultipleChoiceTask):
     VERSION = 0
-    DATASET_PATH = "EleutherAI/csatqa"
+    DATASET_PATH = "HAERAE-HUB/csatqa"
 
     def has_training_docs(self):
         return False

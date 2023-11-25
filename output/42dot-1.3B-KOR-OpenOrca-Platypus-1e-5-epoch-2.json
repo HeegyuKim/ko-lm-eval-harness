@@ -1,0 +1,131 @@
+{
+  "results": {
+    "csatqa_gr": {
+      "acc": 0.16,
+      "acc_stderr": 0.0748331477354788,
+      "acc_norm": 0.16,
+      "acc_norm_stderr": 0.0748331477354788
+    },
+    "csatqa_li": {
+      "acc": 0.21621621621621623,
+      "acc_stderr": 0.0686105685212965,
+      "acc_norm": 0.21621621621621623,
+      "acc_norm_stderr": 0.0686105685212965
+    },
+    "csatqa_rch": {
+      "acc": 0.2571428571428571,
+      "acc_stderr": 0.07495496847387484,
+      "acc_norm": 0.2571428571428571,
+      "acc_norm_stderr": 0.07495496847387484
+    },
+    "csatqa_rcs": {
+      "acc": 0.32432432432432434,
+      "acc_stderr": 0.07802030664724673,
+      "acc_norm": 0.32432432432432434,
+      "acc_norm_stderr": 0.07802030664724673
+    },
+    "csatqa_rcss": {
+      "acc": 0.14285714285714285,
+      "acc_stderr": 0.054649432548286116,
+      "acc_norm": 0.14285714285714285,
+      "acc_norm_stderr": 0.054649432548286116
+    },
+    "csatqa_wr": {
+      "acc": 0.09090909090909091,
+      "acc_stderr": 0.0909090909090909,
+      "acc_norm": 0.09090909090909091,
+      "acc_norm_stderr": 0.0909090909090909
+    },
+    "haerae_hi": {
+      "acc": 0.5159574468085106,
+      "acc_stderr": 0.03654499533330089,
+      "acc_norm": 0.5,
+      "acc_norm_stderr": 0.036563621206356534
+    },
+    "haerae_kgk": {
+      "acc": 0.2215909090909091,
+      "acc_stderr": 0.03139502946092615,
+      "acc_norm": 0.23863636363636365,
+      "acc_norm_stderr": 0.03222147017899509
+    },
+    "haerae_lw": {
+      "acc": 0.8224852071005917,
+      "acc_stderr": 0.029479945887526282,
+      "acc_norm": 0.6035502958579881,
+      "acc_norm_stderr": 0.03773949997679294
+    },
+    "haerae_rc": {
+      "acc": 0.348993288590604,
+      "acc_stderr": 0.022570118599784618,
+      "acc_norm": 0.35570469798657717,
+      "acc_norm_stderr": 0.02266834707760173
+    },
+    "haerae_rw": {
+      "acc": 0.4148148148148148,
+      "acc_stderr": 0.024512246092058515,
+      "acc_norm": 0.32592592592592595,
+      "acc_norm_stderr": 0.023319679825556536
+    },
+    "haerae_sn": {
+      "acc": 0.5163398692810458,
+      "acc_stderr": 0.040533693641336535,
+      "acc_norm": 0.46405228758169936,
+      "acc_norm_stderr": 0.040450405141739476
+    },
+    "kobest_boolq": {
+      "acc": 0.5206552706552706,
+      "acc_stderr": 0.013337372392939223,
+      "macro_f1": 0.4002875140821605,
+      "macro_f1_stderr": 0.011113397867040043
+    },
+    "kobest_copa": {
+      "acc": 0.712,
+      "acc_stderr": 0.01432694179723156,
+      "macro_f1": 0.7112191365452183,
+      "macro_f1_stderr": 0.014328676529979495
+    },
+    "kobest_hellaswag": {
+      "acc": 0.436,
+      "acc_stderr": 0.022198954641476802,
+      "acc_norm": 0.556,
+      "acc_norm_stderr": 0.022242244375731024,
+      "macro_f1": 0.4329867026273221,
+      "macro_f1_stderr": 0.02220607486356093
+    },
+    "kobest_sentineg": {
+      "acc": 0.8690176322418136,
+      "acc_stderr": 0.016954036727284648,
+      "macro_f1": 0.8683149622371913,
+      "macro_f1_stderr": 0.01711002410819817
+    }
+  },
+  "versions": {
+    "csatqa_gr": 0,
+    "csatqa_li": 0,
+    "csatqa_rch": 0,
+    "csatqa_rcs": 0,
+    "csatqa_rcss": 0,
+    "csatqa_wr": 0,
+    "haerae_hi": 0,
+    "haerae_kgk": 0,
+    "haerae_lw": 0,
+    "haerae_rc": 0,
+    "haerae_rw": 0,
+    "haerae_sn": 0,
+    "kobest_boolq": 0,
+    "kobest_copa": 0,
+    "kobest_hellaswag": 0,
+    "kobest_sentineg": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=42dot/42dot_LLM-PLM-1.3B,peft=heegyu/42dot-1.3B-KOR-OpenOrca-Platypus-1e-5,dtype=float16,peft_revision=epoch-2,max_length=1024",
+    "num_fewshot": 0,
+    "batch_size": "4",
+    "device": "cuda:0",
+    "no_cache": true,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "description_dict": {}
+  }
+}

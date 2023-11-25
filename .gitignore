@@ -5,6 +5,5 @@ lm_cache
 .idea
 build/
 logs/
-output/
 lm_eval.egg-info/
 shell/

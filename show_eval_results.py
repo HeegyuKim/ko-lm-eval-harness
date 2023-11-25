@@ -17,5 +17,6 @@ for file in files:
     dfs.append(df)
 
 df = pd.concat(dfs, axis=0)
+print(df.sort_values(by=["index", "filename"]).to_markdown(index=False))
 scores = df.groupby(["task", "filename",]).mean(True).reset_index()
 print(scores.to_markdown(index=False))
